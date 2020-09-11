@@ -1,12 +1,12 @@
 Import-Module C:\Dev\CustomWindowsInstallationUSB -Force -Verbose
 
 $newCustomWindowsInstallationUSBSplat = @{
-    DriverPath = 'C:\Users\thomas\Documents\WinInstall\Drivers'
+    DriverPath = 'C:\Dev\WinInstall\Drivers'
     WindowsVersion = "Windows 10 Enterprise"
-    UpdatesPath = 'C:\Users\thomas\Documents\WinInstall\Updates'
+    UpdatesPath = 'C:\Dev\WinInstall\Updates'
     USBDriveLetter = 'F'
-    ExtraPath = 'C:\Users\thomas\Documents\WinInstall\Extra'
-    ISOFile        = 'C:\Users\thomas\Documents\WinInstall\ISO\SW_DVD9_Win_Pro_Ent_Edu_N_10_1809_64-bit_English_MLF_X21-96501.ISO'
+    ExtraPath = 'C:\Dev\WinInstall\Extra'
+    ISOFile        = 'C:\Dev\WinInstall\ISO\en_windows_10_business_editions_version_2004_updated_may_2020_x64_dvd_aa8db2cc.iso'
     USBDriveLabel = 'WIN10'
 }
 
