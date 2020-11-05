@@ -6,7 +6,7 @@ $newCustomWindowsInstallationUSBSplat = @{
     UpdatesPath = 'C:\Dev\WinInstall\Updates'
     USBDriveLetter = 'F'
     ExtraPath = 'C:\Dev\WinInstall\Extra'
-    ISOFile        = 'C:\Dev\WinInstall\ISO\en_windows_10_business_editions_version_2004_updated_may_2020_x64_dvd_aa8db2cc.iso'
+    ISOFile        = 'C:\Dev\WinInstall\ISO\en_windows_10_business_editions_version_20h2_x64_dvd_4788fb7c.iso'
     USBDriveLabel = 'WIN10'
 }
 
