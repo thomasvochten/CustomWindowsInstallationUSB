@@ -68,7 +68,17 @@ function New-CustomWindowsInstallationUSB {
             "Windows 10 Pro Education",
             "Windows 10 Pro Education N",
             "Windows 10 Pro for Workstations",
-            "Windows 10 Pro N for Workstations")]
+            "Windows 10 Pro N for Workstations",
+            "Windows 11 Education",
+            "Windows 11 Education N",
+            "Windows 11 Enterprise",
+            "Windows 11 Enterprise N",
+            "Windows 11 Pro",
+            "Windows 11 Pro N",
+            "Windows 11 Pro Education",
+            "Windows 11 Pro Education N",
+            "Windows 11 Pro for Workstations",
+            "Windows 11 Pro N for Workstations")]
         [string] $WindowsVersion,
 
         [Parameter(mandatory = $true)]
