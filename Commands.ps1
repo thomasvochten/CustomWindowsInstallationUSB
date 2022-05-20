@@ -6,7 +6,7 @@ $newCustomWindowsInstallationUSBSplat = @{
     UpdatesPath = 'C:\Dev\WinInstall\Updates'
     USBDriveLetter = 'D'
     ExtraPath = 'C:\Dev\WinInstall\Extra'
-    ISOFile        = 'C:\Dev\WinInstall\ISO\en-us_windows_11_business_editions_x64_dvd_3a304c08.iso'
+    ISOFile        = 'C:\Dev\WinInstall\ISO\en-us_windows_11_business_editions_updated_may_2022_x64_dvd_f6700d97.iso'
     USBDriveLabel = 'WIN11'
 }
 
