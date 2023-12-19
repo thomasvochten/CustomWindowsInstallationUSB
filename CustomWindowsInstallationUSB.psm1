@@ -119,7 +119,12 @@ function New-CustomWindowsInstallationUSB {
 
         [Parameter(mandatory = $false)]
         [ValidateScript( { ValidateDirectory($PSItem) } )]
-        [string] $ExtraPath
+        [string] $ExtraPath,
+
+        [Parameter(mandatory = $false)]
+        [ValidateScript( { ValidateDirectory($PSItem) } )]
+        [string] $WorkingDirectory
+
     )
     begin {
 
@@ -135,8 +140,10 @@ function New-CustomWindowsInstallationUSB {
 
         # Clean & initialize the working directory
 
-        $WorkingDirectory = Join-Path -Path $env:TEMP -ChildPath "$($uniqueID)\CustomWindowsInstallationUSB"
-        New-Item $WorkingDirectory -ItemType Directory -Force
+        if (!$WorkingDirectory) {
+            $WorkingDirectory = Join-Path -Path $env:TEMP -ChildPath "$($uniqueID)\CustomWindowsInstallationUSB"
+            New-Item $WorkingDirectory -ItemType Directory -Force    <# Action to perform if the condition is true #>
+        }        
 
         CleanWorkingDirectory($WorkingDirectory)
         InitializeWorkingDirectory($WorkingDirectory)
